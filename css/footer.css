@@ -1,0 +1,16 @@
+footer {
+    height: 60px;
+    background-color: rgb(129, 165, 223);
+    text-align: center;
+
+    padding-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+} 
+footer > a {
+text-decoration: none;
+color: white
+}
+footer > a:hover {
+    color: rgb(65, 65, 191);
+}

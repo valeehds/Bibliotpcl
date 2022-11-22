@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+body {
+    max-width: 1250px;
+    max-height: 640px;
+    min-width: 1250px;
+    min-height: 640px;
+    margin: auto
+}
+.container {
+    height: 400px;
+    background-image: url(../img/niñofondo.jpg);
+    background-size: cover;
+}
+ .formularioU {
+    margin-top: 20px;
+    margin-left: 400px;
+    font-family: Arial;
+    font-size: 16px;
+}
+input {
+    height: 22px;
+    border: 1px solid rgb(106, 106, 106);
+    text-align: center;
+    border-radius: 11px 11px 11px 11px;
+}
+.numP {
+    width: 50px;
+}
+select {
+    height: 22px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 150px;
+    border-radius: 11px 11px 11px 11px;
+}
+.bottomS {
+    width: 45px;
+}
+.button {
+    display: inline-block;
+    padding: 4px 24px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    height: 23px;
+    padding-bottom: 15px;
+    background-color: #3972bd;
+    border: none;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #aad6ff;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 1px solid #3995bd;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: #76aaed;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: #4a88cb;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   .barraa {
+    font-family: 'Lato', sans-serif;
+    /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+    width:10%;
+    /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+    position:fixed;
+    /*Tiempo en el que va a transitar la animacion*/
+    transition: .3s all ;
+    /*este arriba de todo en la pantalla*/  
+}
+
+.barraa ul{
+    /*solucionar espacios no deseados*/
+    padding:0px;
+    text-align: center;    
+}
+.barraa  li{
+    /*Velocidad de transicion del contenido*/
+    transition:all .3s;
+    list-style: none; 
+}
+
+.barraa a{
+    text-decoration: none;
+    
+    font-weight: normal;
+    
+    /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+    transition: .2s all ;
+    /*Se ocultan los elementos*/
+    font-size: 0px;
+    padding:0px;
+}
+
+.barraa  h2{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    /*Se oculta el h2*/
+    font-size:0px;   
+}
+
+.barraa img{
+    padding-top: 10px;
+    padding-left: 1px;
+}
+
+.barraa:hover{
+    /*Tamaño cuando el cursor señale la barra*/
+    width: 70%;
+    height: 66vh;
+    
+    /*Color*/
+    background: rgba(17, 41, 79, 0.98);
+}
+.barraa:hover h2{
+    /*posicion dentro de barra del h2*/
+    padding:15px;
+    font-size: 30px;
+}
+.barraa:hover a{ 
+    font-size:15px ;
+    color:white;
+    /*Se usa el display block para que el enlace respete el margin*/
+    display: block;
+    padding:15px;
+}
+.barraa:hover img{
+    /*Desaparecer la imagen*/
+    height:0px;
+}
+
+
+.barraa:hover li{
+    /*Espacios entre las lineas y el contenido*/
+    
+    width:100%;
+        
+}
+
+.barraa:hover a:hover{ 
+    font-size: 17px;
+    padding: 20px 0px; 
+    background: rgba(94, 114, 173, 0.98);  
+}
+
+@media (min-width: 10px){
+    .barraa:hover{
+    width: 20%;
+    }
+}
+.barra .barrA {
+        height: 22px;
+        border: 1px solid rgb(0, 0, 0);
+        width: 180px;
+        border-radius: 1px 1px 1px 1px;
+}

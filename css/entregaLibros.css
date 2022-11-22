@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+body {
+    max-width: 1250px;
+    max-height: 640px;
+    min-width: 1250px;
+    min-height: 640px;
+    margin: auto
+}
+.container {
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+}
+select {
+    height: 22px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 180px;
+}
+.cabeza {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+fieldset {
+    margin-left: 290px;
+    width: 700px;
+    border: 1px solid black;
+}
+legend {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+input {
+    height: 20px;
+    border-radius: 20px 20px 20px 20px ;
+    border: 1px solid black;
+    text-align: center;
+}
+.document {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 70px;
+    margin-left: 290px;
+}
+.estado {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 590px;
+    margin-bottom: 70px;
+}
+.lupa {
+    height: 19px;
+    width: 19px;
+}
+.bt {
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+}
+.docu {
+    width: 360px;
+}
+.barraa {
+    font-family: 'Lato', sans-serif;
+    /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+    width:10%;
+    /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+    position:fixed;
+    /*Tiempo en el que va a transitar la animacion*/
+    transition: .3s all ;
+    /*este arriba de todo en la pantalla*/  
+}
+
+.barraa ul{
+    /*solucionar espacios no deseados*/
+    padding:0px;
+    text-align: center;    
+}
+.barraa  li{
+    /*Velocidad de transicion del contenido*/
+    transition:all .3s;
+    list-style: none; 
+}
+
+.barraa a{
+    text-decoration: none;
+    
+    font-weight: normal;
+    
+    /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+    transition: .2s all ;
+    /*Se ocultan los elementos*/
+    font-size: 0px;
+    padding:0px;
+}
+
+.barraa  h2{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    /*Se oculta el h2*/
+    font-size:0px;   
+}
+
+.barraa img{
+    padding-top: 10px;
+    padding-left: 1px;
+}
+
+.barraa:hover{
+    /*Tamaño cuando el cursor señale la barra*/
+    width: 70%;
+    height: 66vh;
+    
+    /*Color*/
+    background: rgba(17, 41, 79, 0.98);
+}
+.barraa:hover h2{
+    /*posicion dentro de barra del h2*/
+    padding:15px;
+    font-size: 30px;
+}
+.barraa:hover a{ 
+    font-size:15px ;
+    color:white;
+    /*Se usa el display block para que el enlace respete el margin*/
+    display: block;
+    padding:15px;
+}
+.barraa:hover img{
+    /*Desaparecer la imagen*/
+    height:0px;
+}
+
+
+.barraa:hover li{
+    /*Espacios entre las lineas y el contenido*/
+    
+    width:100%;
+        
+}
+
+.barraa:hover a:hover{ 
+    font-size: 17px;
+    padding: 20px 0px; 
+    background: rgba(94, 114, 173, 0.98);  
+}
+
+@media (min-width: 10px){
+    .barraa:hover{
+    width: 20%;
+    }
+}

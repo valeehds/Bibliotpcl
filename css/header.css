@@ -1,0 +1,47 @@
+.iconoU {
+    position: static;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    margin-right: 9px;
+    margin-bottom: -12px;
+}
+.barra {
+    position: static;
+    width: 100px;
+    margin-left: 900px;
+    margin-top: -55px;
+    margin: none;
+}
+header {
+    padding-top: 20px;
+    background-color: rgb(200, 224, 255);
+    height: 60px;
+    padding-left: 80px;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sail', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+input {
+    position: static;
+    height: 22px;
+    border: 1px solid rgb(0, 0, 0);
+}
+select {
+    position: static;
+    height: 22px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 180px;
+}
+.bottomS {
+    position: static;
+    position: static;
+    height: 20px;
+    width: 70px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    background-color: rgb(131, 131, 255);   
+}
+
